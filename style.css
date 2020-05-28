@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=PT+Sans+Narrow:wght@700&display=swap');
+
+body{
+    background-color: #35426f;
+}
+.header{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.header2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.719);
+    padding: 5px;
+    margin-top: -25px;
+    border-radius: 7px;
+    width: 380px;
+}
+p#infop{
+    background-color: rgba(0, 0, 0, 0.644);
+    font-family: 'Courier New';
+    color: white;
+    padding: 5px;
+}
+.info{
+    background-color: rgba(255, 255, 255, 0.719);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: black 5px 5px 3px;
+}
+table#tabela{
+    background-color: black;
+    border: 1px dashed white;
+    padding: 5px;
+    text-align: center;
+}
+td{
+    color: rgba(255, 255, 255, 0.897);
+    border: 1px solid white;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.363);
+    cursor: pointer;
+}
+.aluno:hover{
+    background-color: rgba(73, 73, 73, 0.63);
+}
+tr{
+    border: 1px solid white;
+    padding: 5px; 
+}
+div#graficos{
+    width: 300px;
+    height: 300px;
+}
+input#btngraph{
+    margin-top: 58px;
+    margin-left: 612px;
+    width: 100px;
+    height: 25px;
+}
+input#btngraph:hover{
+    background-color: #C0C0C0;
+    transition: 0.2s;
+    text-decoration: underline;
+    outline: none;
+}
+h2#t2{
+position: absolute;
+left: 620px;
+bottom: 460px;
+}
+div#notas{
+    text-align: center;
+}
+div#medias{
+    margin-top: 50px;
+    text-align: center;
+}
+div#desempenho{
+    margin-top: 50px;
+    text-align: center;
+}
+div#notas{
+    text-align: center;
+}
+b#b11{
+    margin-left: 102px;
+}
+input#botao{
+    position: relative;
+    bottom: 140px;
+}
+table#tabelaspec td{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #7cdddb;
+}
+table#tabelaspec{
+    margin-left: 395px;
+    position: relative;
+}
+div#medias{
+    position: relative;
+    bottom: 150px;
+}
+div#nmat{
+position: absolute;
+left: 400px;
+}
+input#btlmedias{
+    position: relative;
+    left: 565px;
+    width: 180px;
+    padding: 5px;
+}
+div#teste{
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    font-size: larger;
+}
+input#btlmedias:hover{
+    transition: 0.4s;
+    text-align: center;
+    transform: scale(1.2);
+}
+.efeito:hover{
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.233);
+}
+.caixas{
+    background-color: rgba(59, 50, 50, 0.74);
+    outline: none;
+    border: 2px solid rgba(59, 50, 50, 0.74);
+    border-radius: 8px;
+    width: 100px;
+    color: white;
+    margin-right: 10px;
+    margin-left: 8px;
+}
+.caixas:focus{
+    transform: scale(1.2);
+    transition: 0.3s;
+    border:2px solid rgba(255, 255, 255, 0.671);
+}
+div#graficos{
+    margin-top: 50px;
+    margin-left: 80px;
+    height: 1000px;
+    width: 1170px;
+}
+.divg{
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+

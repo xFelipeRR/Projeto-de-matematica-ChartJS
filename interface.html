@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--Teste de permissão para commit-->
+<body>
+    <header>
+        <h1 class="header" >Projeto de matemática</h1>
+        <h2 class="header2">Relacionar a matemática ao curso</h2>
+    </header>
+    <section>
+       
+        <ul>
+           <p id="infop">Olá, bem vindo ao nosso trabalho de matemática, siga as seguintes instruções para ter uma boa experiência!</p>
+            <li class="info">- Clique em um dos alunos do GP2 para usar como exemplo de aluno.</li>
+            <li class="info">- Após adicionar as notas nas respectivas matérias clique em calcular para saber sua média individual.</li>
+            <li class="info">- Por seguinte, fique a vontade para ver sua média geral e gráficos de desempenho.</li>
+            <li class="info">- Atualize a página caso queira testar de novo.</li>
+        </ul>
+    </section>
+    <section>
+        <table id="tabela">
+        <tr><td colspan="2">GP2</td></tr>
+        <tr><td>Aluno 1</td><td class="aluno" onclick="aluno1()">Felipe Rangel</td></tr>
+        <tr><td>Aluno 2</td><td class="aluno" onclick="aluno2()">Júlio César</td></tr>
+        <tr><td>Aluno 3</td><td class="aluno" onclick="aluno3()">Eduardo de Lima</td></tr>
+        <tr><td>Aluno 4</td><td class="aluno" onclick="aluno4()">Carlos Gabriel</td></tr>
+        <tr><td>Aluno 5</td><td class="aluno" onclick="aluno5()">Mileide Ribeiro</td></tr>
+    </table>
+    </section>
+    <div id="notas">
+        <p id="titlenotas"> NOTAS </p>
+        <div id="mat" class="efeito"><p></p>
+        <br><b id="b0">MATEMÁTICA:</b> AP1: <input class="caixas" type="number" id="m1"> AP2: <input type="number" class="caixas" id="m2"> AP3: <input
+            type="number" class="caixas" id="m3"><input type="button" value="Calcular" onclick="matematica()">
+        <p>
+            <div id="mediam" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
+        </p></div>
+        <div id="port" class="efeito"><p></p>
+        <br><b id="b1">&nbsp;&nbsp;&nbsp;&nbsp;PORTUGUÊS:</b> AP1: <input type="number" class="caixas" class="caixas" id="p1"> AP2: <input
+            type="number" class="caixas" id="p2"> AP3: <input type="number" class="caixas" id="p3"><input type="button" value="Calcular"
+            onclick="portugues()">
+        <p>
+            <div id="mediap" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
+        </p></div>
+
+        <div id="bio" class="efeito"><p></p>
+        <br><b id="b2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIOLOGIA:</b> AP1: <input type="number" class="caixas"
+            id="bio1"> AP2: <input type="number" class="caixas" id="bio2"> AP3: <input type="number" class="caixas" id="bio3"><input type="button"
+            value="Calcular" onclick="biologia()">
+        <p>
+            <div id="mediab" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
+        </p></div>
+
+        <div id="geo" class="efeito"><p></p>
+        <br><b id="b3">&nbsp;&nbsp;&nbsp;&nbsp;GEOGRAFIA:</b> AP1: <input type="number" class="caixas" id="g1"> AP2: <input
+            type="number" class="caixas" id="g2"> AP3: <input type="number" class="caixas" id="g3"><input type="button" value="Calcular"
+            onclick="geografia()">
+        <p>
+            <div id="mediag" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
+        </p></div>
+
+        <div id="his" class="efeito"><p></p>
+        <br><b id="b4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HISTÓRIA:</b> AP1: <input type="number" class="caixas" id="h1">
+        AP2: <input type="number" class="caixas" id="h2"> AP3: <input type="number" class="caixas" id="h3"><input type="button" value="Calcular"
+            onclick="historia()">
+        <p>
+            <div id="mediah" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
+        </p></div>
+
+        <div id="ing" class="efeito"><p></p>
+        <br><b id="b5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INGLÊS:</b> AP1:
+        <input type="number" class="caixas" id="i1"> AP2: <input type="number" class="caixas" id="i2"> AP3: <input type="number" class="caixas" id="i3"><input
+            type="button" value="Calcular" onclick="ingles()">
+        <p>
+            <div id="mediai" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
+        </p></div>
+
+        <div id="esp" class="efeito"><p></p>
+        <br><b id="b6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESPANHOL:</b> AP1: <input type="number" class="caixas" id="e1"> AP2:
+        <input type="number" class="caixas" id="e2"> AP3: <input type="number" class="caixas" id="e3"><input type="button" value="Calcular"
+            onclick="espanhol()">
+        <p>
+            <div id="mediae" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
+        </p></div>
+        
+    </div>
+    
+        <div id="teste"></div>
+    </div>
+    <input id="btlmedias" type="button" value="Média Geral" onclick="testmedia()">
+
+    <input type="button" value="Ver gráficos" id="btngraph" onclick="graph()">
+    <br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <div id="graficos">
+
+        <div class="divg sub1">
+    <canvas id="myChart"></canvas>
+        </div>
+
+        <div class="divg sub2">
+    <canvas id="myChart2"></canvas>
+        </div>
+
+        <div class="divg sub3">
+    <canvas id="myChart3"></canvas>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
