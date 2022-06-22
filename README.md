@@ -1,2 +1,2 @@
 # Projeto de matematica ChartJS
- Projeto de matematica feito para um trabalho escolar. Usado para aprender o básico sobre o framwork ChartJS
+ Math project for a school work. In order to learn about the framework ChartJS
